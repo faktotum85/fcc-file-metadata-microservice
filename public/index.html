@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale:1">
+    <title>File Metadata Microservice</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>File Metadata Microservice</h1>
+      <h2>User stories</h2>
+      <ul>
+        <li>I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+      </ul>
+      <h2>Form</h2>
+      <p>
+        Submit a file to view its filesize.
+      </p>
+      <form action="/get-file-size" method="post" enctype="multipart/form-data">
+        <input name="file" type="file" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
